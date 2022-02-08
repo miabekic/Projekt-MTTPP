@@ -12,10 +12,16 @@ Functionalities tested in this project:
 - Tests are runed using TestNG
 - To drive the browsers I used Selenium WebDriver 
 
-## Tools that you need to install for runing this project
+## Used tools for creating this project
+ - IDE: IntelliJ Community Edition
+ - Development Kit: Java JDK
+ - Build system: Maven
+ - Test framework: TestNG
 
- 1. Java JDK(https://www.oracle.com/java/technologies/downloads/#java8)
- 2. IntelliJ(https://www.jetbrains.com/idea/download/#section=windows)
+## Tools that you need to install for running this project
+
+ 1. Java JDK (https://www.oracle.com/java/technologies/downloads/#java8)
+ 2. IntelliJ (https://www.jetbrains.com/idea/download/#section=windows)
 
 ## Importing the project
 
@@ -26,6 +32,7 @@ Functionalities tested in this project:
 ## Configuration
   Before running the tests:
   - chose browser/browsers in which you want to run them (Chrome, Edge or Firefox)
+  - which test classes you want to run
   - modify ***testng.xml*** according to decition
 
 ## How to run the tests
@@ -50,9 +57,9 @@ There are two options:
   2. Opened Instagram web site
 
  **Real results**
-  Tests are passing, but sometime they don't because we can connect with Instagram to check entered data and 
-  because Instagram (after a lot of times that we logged in) doesn't allowes as to log in the system and not 
-  giving appropriate alert in tests.
+  - Tests are passing, but sometime they don't because we can connect with Instagram to check entered data and because Instagram (after a lot of times that we logged in)         doesn't allowes as to log in the system and not giving appropriate alert in tests.
+  
+  <img src="images/LogInTests.png" width="500" hight="200">
 
 ### AddContentTests class
 
@@ -63,7 +70,7 @@ Functionality is tested in 3 different ways:
 2. Add one video -> **predicted result**: video is going to be presented in the window
 3. Add one more picture after one before -> **predicted result**: new added picture is going to be visible in the window
 
-**Preconditions for this tests are:**
+**Preconditions:**
 1. Internet connection
 2. User logged in
 
@@ -72,6 +79,7 @@ I solve that problem by using ...
 
 **Real results**
 Tests are passing, but sometime they don't because of logging issue, automation choosing not working (rarely).
+<img src="images/AddContentTests.png" width="500" hight="200">
 
 ### ShareContentTests class
 
@@ -87,6 +95,7 @@ In this class I tested sharing functionality in 3 different ways:
  
 **Real results**
 Tests are passing, but sometime they don't because of the same issues that I mentioned for class AddContentTest.
+<img src="images/ShareContentTests.png" width="500" hight="200">
 
 ### FollowTests
 
@@ -101,3 +110,4 @@ For this functionality I wrote just one test:
 
 **Real results**
 Tests are passing, but sometimes they don't because of logging issue.
+<img src="images/FollowTest.png" width="500" hight="200">
