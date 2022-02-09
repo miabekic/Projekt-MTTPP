@@ -33,7 +33,8 @@ Functionalities tested in this project:
 ## How to run the tests
 There are two options:
 1. Right click on ***testng.xml*** and chose ***Run***
-2. Write in terminal: mvn test (Ctrl + Enter)
+2. Write in terminal: mvn test
+   (Ctrl + Enter)
 
 ## Tests explanations
 
