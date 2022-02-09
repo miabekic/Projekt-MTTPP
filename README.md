@@ -1,6 +1,6 @@
 # Automated testing for Instagram web app
  
-This project is created for the assignment at "Methods and Techinques of Software Testing" course at FERIT Osijek. 
+This project is created for the assignment at ***Methods and Techinques of Software Testing*** course at FERIT Osijek. 
 In this project, automation testing was implemented for Web application Instagram.
 Instagram is a social app and it has a lot of functionalities, like share content, send message, follow other user, watch content and many more.
 Functionalities tested in this project:
@@ -8,32 +8,26 @@ Functionalities tested in this project:
  2. Share image/video functionality
  3. Follow functionality
 
+- Project is created in IntelliJ Community Edition
 - It is a Maven project
 - Tests are runed using TestNG
 - To drive the browsers I used Selenium WebDriver 
-
-## Used tools for creating this project
- - IDE: IntelliJ Community Edition
- - Development Kit: Java JDK
- - Build system: Maven
- - Test framework: TestNG
 
 ## Tools that you need to install for running this project
 
  1. Java JDK (https://www.oracle.com/java/technologies/downloads/#java8)
  2. IntelliJ (https://www.jetbrains.com/idea/download/#section=windows)
-
-## Importing the project
-
- 1. Import Project -> Select project root dir -> Import project from external model - Maven (leave everything by default)
- 2. Set project name (You can choose the same as artifactid in pom.xml file)
- 3. Import dependencies
+ 
+ ## Opening the project in IntelliJ
+ 1. Run IntelliJ
+ 2. File -> Open
+ 3. Navigate to the project file, select projektniZadatakMTTPP and click OK button
 
 ## Configuration
   Before running the tests:
-  - chose browser/browsers in which you want to run them (Chrome, Edge or Firefox)
-  - which test classes you want to run
-  - modify ***testng.xml*** according to decition
+  - choose browser/browsers in which you want to run them (Chrome, Edge or Firefox)
+  - choose which test classes you want to run
+  - modify ***testng.xml*** according to decisions
 
 ## How to run the tests
 There are two options:
@@ -57,7 +51,7 @@ There are two options:
   2. Opened Instagram web site
 
  **Real results**
-  - Tests are passing, but sometime they don't because we can connect with Instagram to check entered data and because Instagram (after a lot of times that we logged in)         doesn't allowes as to log in the system and not giving appropriate alert in tests.
+  - Tests are passing, but sometime they don't because we cannot connect with Instagram to check entered data and because Instagram (after a lot of times that we logged in)         doesn't allowes as to log in the system and not giving appropriate alert in tests.
   
   <img src="images/LogInTests.png" width="500" hight="200">
 
@@ -75,10 +69,10 @@ Functionality is tested in 3 different ways:
 2. User logged in
 
 For this tests I had to find a way how to automatically choose content from computer.
-I solve that problem by using ...
+I solve that problem by using package java.awt which enabled automatic key pressing/releasing, saving text to clipboard and a lot of other stuff but those are the most important ones for automatical content chosing (path to the content is saved on clipboard then it is pasted and enter is pressed -> this will select wanted content and then it is going to be shown in Instagram window ***Style***)
 
 **Real results**
-Tests are passing, but sometime they don't because of logging issue, automation choosing not working (rarely).
+ - Tests are passing, but sometime they don't because of logging issue, automation choosing not working (rarely).
 <img src="images/AddContentTests.png" width="500" hight="200">
 
 ### ShareContentTests class
@@ -94,7 +88,7 @@ In this class I tested sharing functionality in 3 different ways:
 3. Content for sharing added 
  
 **Real results**
-Tests are passing, but sometime they don't because of the same issues that I mentioned for class AddContentTest.
+ - Tests are passing, but sometime they don't because of the same issues that I mentioned for class AddContentTest.
 <img src="images/ShareContentTests.png" width="500" hight="200">
 
 ### FollowTests
@@ -109,5 +103,5 @@ For this functionality I wrote just one test:
 3. User not already following account
 
 **Real results**
-Tests are passing, but sometimes they don't because of logging issue.
+ - Tests are passing, but sometimes they don't because of logging issue.
 <img src="images/FollowTest.png" width="500" hight="200">
