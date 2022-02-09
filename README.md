@@ -40,7 +40,7 @@ There are two options:
 ## Tests classes and functionalities tested in them
 
  This project contain 4 test classes and they in total have 10 tests.
- For every test class, I decided to show the test results gotten by running the tests in Chrome.
+ For every test class, I decided to show the tests result gotten by running the tests in Chrome.
 
   ### LogInTests class
 
@@ -88,5 +88,5 @@ For this functionality I wrote just one test:
 1. Follow private account
 
 **Test result**
- - Tests are passing, but sometimes they don't because of logging issue.
+ - Test is passing, but sometime it doesn't because of logging issue.
 <img src="images/FollowTest.png" width="500" hight="200">
