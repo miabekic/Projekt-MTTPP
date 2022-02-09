@@ -3,6 +3,7 @@
 This project is created for the assignment at ***Methods and Techinques of Software Testing*** course at FERIT Osijek. 
 In this project, automation testing was implemented for Web application Instagram.
 Instagram is a social app and it has a lot of functionalities, like share content, send message, follow other user, watch content and many more.
+Instagram account is created for the purposes of this project.
 Functionalities tested in this project:
  1. Login functionality
  2. Share image/video functionality
@@ -38,6 +39,7 @@ There are two options:
 
  There is a 10 tests in total.
  For finding elements I mostly used xpath because there were no id or name attributes and that can led to a problem if they chages.
+ Results shown for every test class are gotten by using Chrome, but tests are also ran in other browsers.
 
   ### LogInTests class
 
@@ -46,7 +48,7 @@ There are two options:
   2. User enters wrong username and correct password -> **predicted result**: user gets alert about wrong username
   3. User enters correct username and wrong password -> **predicted result**: user gets alert about wrong password
 
- **Preconditions for this tests are:**
+ **Preconditions:**
   1. Internet connection
   2. Opened Instagram web site
 
@@ -88,7 +90,7 @@ In this class I tested sharing functionality in 3 different ways:
 3. Content for sharing added 
  
 **Real results**
- - Tests are passing, but sometime they don't because of the same issues that I mentioned for class AddContentTest.
+ - Tests are passing, but sometime they don't because of the same issues that I mentioned for class AddContentTests.
 <img src="images/ShareContentTests.png" width="500" hight="200">
 
 ### FollowTest class
