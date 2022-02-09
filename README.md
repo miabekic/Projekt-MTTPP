@@ -91,7 +91,7 @@ In this class I tested sharing functionality in 3 different ways:
  - Tests are passing, but sometime they don't because of the same issues that I mentioned for class AddContentTest.
 <img src="images/ShareContentTests.png" width="500" hight="200">
 
-### FollowTests
+### FollowTest class
 
 In this class I tested follow functionality.
 For this functionality I wrote just one test:
