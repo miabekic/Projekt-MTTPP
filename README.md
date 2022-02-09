@@ -39,7 +39,6 @@ There are two options:
 
  There is a 10 tests in total.
  For finding elements I mostly used xpath because there were no id or name attributes and that can led to a problem if they chages.
- Results shown for every test class are gotten by using Chrome, but tests are also ran in other browsers.
 
   ### LogInTests class
 
