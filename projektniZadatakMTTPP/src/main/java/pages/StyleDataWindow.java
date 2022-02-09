@@ -59,6 +59,8 @@ public class StyleDataWindow {
     public  void  clickBtnAddMoreData(){
         driver.findElement(addMoreDataBtn).click();
     }
+    
+    public void clickArrowNextRightBtn(){driver.findElement(arrowNextRightBtn).click();}
 
     public void clickExitBtn(){
         driver.findElement(exitBtn).click();
