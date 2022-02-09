@@ -70,6 +70,11 @@ public class AddContentTests
         styleDataPage.clickBtnAddMoreData();
         path=System.getProperty(directory)+picture2;
         computerAddDataWindow.chooseAndAddPictureOrVideo(path);
+        wait.until(ExpectedConditions.presenceOfElementLocated(styleDataPage.getArrowNextRightBtn()));
+        styleDataPage.clickArrowNextRightBtn();
+        
+        Assert.assertNotEquals(styleDataPage.getStyleValuePicture().contains("background-image"), true);
+
     }
 
     @Test(priority = 2)
